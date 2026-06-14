@@ -1,53 +1,80 @@
-# 🌐 Portafolio de Networking
+# 🌐 Portafolio de Networking | Alex Kam
 
-**Alex Kam**  
-*Especializado en datacom, seguridad y actualmente estudiando para automatización*
-
-[![GitHub](https://img.shields.io/badge/GitHub-alexkam--tech/alexkam-181717?logo=github)](https://github.com/alexkam-tech/portafolio)  
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-alexkamgoñe-0A66C2?logo=linkedin)](https://www.linkedin.com/in/alexkamgoñe)  
----
-
-## 👋 Sobre mí
-
-Soy Alex Chui Kam Goñe, profesional especializado en **datacom** con experiencia en el sector de telecomunicaciones en Perú.
-
-Actualmente me desempeño como **Especialista de Arquitectura de Red** en WI-NET Telecom SAC (Lima - Perú), donde aplico mis conocimientos, incluyendo:
-
-- Protocolos de enrutamiento avanzados
-- Migracion de equipamiento
-- Configuración de servicios sobre MPLS (L2/L3 VPN)
-- Configuraciones masivas y obtención de logs utilizando **Python + Netmiko**
-
-Me encuentro en constante estudio para mantener mis habilidades actualizadas, actualmente estoy estudiando para una nueva certificación **CCNA Automation and Programmability (200-901)**. Mi enfoque principal es la **automatización de redes**, Python, Ansible, Netmiko y la aplicación de prácticas modernas de desarrollo (Git, metodologías ágiles) al mundo del networking.
-
-Mantengo un laboratorio personal activo con **GNS3**, equipos Huawei, Cisco y Fortinet para experimentar, documentar y crear contenido práctico y realista.
-
-
-*(Este portafolio está en construcción activa. Pronto iré subiendo laboratorios completos, scripts funcionales y guías paso a paso.)*
+> **Compartiendo conocimiento práctico de redes en español**  
+> Datacom • Automatización • Seguridad • Laboratorios reales
 
 ---
 
-## 🤝 Construyamos Comunidad
+## 👋 ¿Quién soy?
 
-Este repositorio nace con un objetivo claro: **compartir conocimiento de networking en español** y crear una comunidad de profesionales, estudiantes y entusiastas en Perú.
+Hola, soy **Alex Chui Kam Goñe**, especialista en arquitectura de redes con experiencia en el sector de telecomunicaciones en Perú.
 
-**Formas de participar:**
-- ⭐ **Dale Star** si el contenido te sirve
-- 🐛 Abre un **Issue** si tienes dudas técnicas o sugerencias
-- 🔀 Envía un **Pull Request** si quieres aportar labs, scripts o mejoras
-- 💬 Conectemos LinkedIn
+Actualmente me estoy especializando en **automatización de redes** (CCNA Automation and Programmability - 200-901) porque creo que el futuro de las redes está en la combinación de conocimiento técnico sólido + automatización inteligente.
 
-¡Mi intención es que este sea un espacio vivo donde todos podamos aprender y crecer!
+Mi objetivo con este portafolio es **compartir conocimiento de calidad en español**, con laboratorios reales, configuraciones funcionales y guías paso a paso que puedas aplicar en tu trabajo o estudios.
 
 ---
 
-## 📫 Contacto
+## 🛠️ Tecnologías y Herramientas
 
-- **LinkedIn:** [Alex Kam Goñe](https://www.linkedin.com/in/alexkamgoñe)
+| Categoría          | Tecnologías |
+|--------------------|-----------|
+| **Equipos**        | Huawei, Cisco, Fortinet |
+| **Simulación**     | GNS3 |
+| **Automatización** | Python, Netmiko, Ansible |
+| **Protocolos**     | MPLS (L2/L3 VPN), BGP, OSPF, ISIS |
+| **Otros**          | Git, metodologías ágiles, documentación técnica |
 
 ---
 
-*Hecho con ❤️ Lima - Perú*  
+## 📚 ¿Qué vas a encontrar aquí?
+
+Este repositorio está en construcción activa. Poco a poco iré subiendo:
+
+- **Laboratorios completos** (topología + configuraciones + explicación)
+- **Scripts de automatización** reales y comentados
+- **Guías paso a paso** de configuraciones avanzadas
+- **Buenas prácticas** de datacom y seguridad
+
+Todo el contenido está pensado para ser **práctico y aplicable**.
+
+---
+
+## 🎯 Roadmap de Contenido (2026)
+
+- [ ] Laboratorios de automatización con Python + Netmiko
+- [ ] Serie de MPLS y servicios L2/L3 VPN
+- [ ] Configuraciones avanzadas en Huawei
+- [ ] Buenas prácticas de seguridad en redes
+- [ ] Proyectos de automatización con Ansible / Netmiko
+
+---
+
+## 🤝 Construyamos comunidad
+
+Este proyecto nace con la idea de crear una comunidad de networking en español, especialmente para Perú.
+
+**¿Cómo puedes participar?**
+
+- ⭐ Dale **Star** al repositorio si te gusta el contenido
+- 🐛 Abre un **Issue** si tienes dudas, sugerencias o quieres que explique algún tema
+- 🔀 Envía un **Pull Request** si quieres aportar un laboratorio o mejora
+- 💬 Conéctate conmigo en [LinkedIn](https://www.linkedin.com/in/alexkamgoñe)
+
+---
+
+## 📺 Próximamente en YouTube
+
+Estoy preparando un canal donde subiré **guías y laboratorios en video**. Este repositorio servirá como complemento: aquí encontrarás todos los archivos, configuraciones y scripts que use en los videos.
+
+---
+
+## 📌 Notas importantes
+
+- Todo el contenido es **educativo y sanitizado**.
+- No se publicarán credenciales, IPs de producción ni información sensible.
+- Hecho con ❤️ en **Lima, Perú**.
+
+---
+
 *Actualizado: Junio 2026*
-
-> **Nota importante:** Todo el contenido que se publique en este repositorio está sanitizado y tiene fines educativos. Nunca se subirán credenciales, IPs de producción ni información sensible.
