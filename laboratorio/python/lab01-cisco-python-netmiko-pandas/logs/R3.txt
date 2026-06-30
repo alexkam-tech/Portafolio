@@ -1,0 +1,247 @@
+
+
+======================================================================
+show run
+Building configuration...
+
+Current configuration : 3320 bytes
+!
+! Last configuration change at 05:07:54 UTC Mon Jun 29 2026
+!
+version 15.6
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R3
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+ethernet lmi ce
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+no ip icmp rate-limit unreachable
+!
+!
+!
+!
+!
+!
+no ip domain lookup
+ip domain name akam-labs
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+username akam privilege 15 secret 5 $1$J3v0$YguOPh7.PBOQ.rjZyu52U1
+!
+redundancy
+!
+no cdp log mismatch duplex
+!
+ip tcp synwait-time 5
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ ip address 192.168.18.102 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+ip ssh version 2
+!
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+line aux 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+line vty 0 4
+ login local
+ transport input ssh
+line vty 5 15
+ login local
+ transport input ssh
+!
+no scheduler allocate
+!
+end
+
+R3#
+
+
+======================================================================
+
+
+======================================================================
+show ip int brief
+Interface                  IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0         unassigned      YES unset  administratively down down    
+GigabitEthernet0/1         unassigned      YES unset  administratively down down    
+GigabitEthernet0/2         unassigned      YES unset  administratively down down    
+GigabitEthernet0/3         192.168.18.102  YES manual up                    up      
+R3#
+
+
+======================================================================
+
+
+======================================================================
+show logg
+Syslog logging: enabled (0 messages dropped, 3 messages rate-limited, 0 flushes, 0 overruns, xml disabled, filtering disabled)
+
+No Active Message Discriminator.
+
+
+
+No Inactive Message Discriminator.
+
+
+    Console logging: level debugging, 33 messages logged, xml disabled,
+                     filtering disabled
+    Monitor logging: level debugging, 0 messages logged, xml disabled,
+                     filtering disabled
+    Buffer logging:  level debugging, 33 messages logged, xml disabled,
+                    filtering disabled
+    Exception Logging: size (8192 bytes)
+    Count and timestamp logging messages: disabled
+    Persistent logging: disabled
+
+No active filter modules.
+
+    Trap logging: level informational, 35 message lines logged
+        Logging Source-Interface:       VRF Name:
+
+Log Buffer (8192 bytes):
+
+*Mar  1 00:00:01.336: %ATA-6-DEV_FOUND: device 0x1F0
+*Mar  1 00:00:04.603: %ATA-6-DEV_FOUND: device 0x1F1
+*Mar  1 00:00:08.216: %NVRAM-5-CONFIG_NVRAM_NOT_FOUND: NVRAM configuration 'flash:/nvram' could not be found on disk.
+*Jun 29 04:24:55.476: %PA-3-PA_INIT_FAILED: Performance Agent failed to initialize (Missing Data License)
+*Jun 29 04:25:01.141: %LINK-3-UPDOWN: Interface GigabitEthernet0/0, changed state to down
+*Jun 29 04:25:01.143: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to down
+*Jun 29 04:25:01.145: %LINK-3-UPDOWN: Interface GigabitEthernet0/2, changed state to down
+*Jun 29 04:25:01.147: %LINK-3-UPDOWN: Interface GigabitEthernet0/3, changed state to up
+*Jun 29 04:25:03.111: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to down
+*Jun 29 04:25:03.114: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to down
+*Jun 29 04:25:03.115: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/2, changed state to down
+*Jun 29 04:25:03.117: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/3, changed state to up
+*Jun 29 04:25:03.252: %CVAC-7-CONFIG_FOUND: Configuration file flash2:/ios_config.txt was found and will be applied to NVRAM.
+*Jun 29 04:25:04.863: %CVAC-7-CONFIG_FOUND: Configuration file flash2:/ios_config.txt was found and will be applied to NVRAM.
+*Jun 29 04:25:05.369: %LINK-5-CHANGED: Interface GigabitEthernet0/0, changed state to administratively down
+*Jun 29 04:25:05.371: %LINK-5-CHANGED: Interface GigabitEthernet0/1, changed state to administratively down
+*Jun 29 04:25:05.372: %LINK-5-CHANGED: Interface GigabitEthernet0/2, changed state to administratively down
+*Jun 29 04:25:05.600: %LINK-5-CHANGED: Interface GigabitEthernet0/3, changed state to administratively down
+*Jun 29 04:25:06.654: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/3, changed state to down
+*Jun 29 04:25:13.296: %GRUB-5-CONFIG_WRITING: GRUB configuration is being updated on disk. Please wait...
+*Jun 29 04:25:14.777: %GRUB-5-CONFIG_WRITTEN: GRUB configuration was written to disk successfully.
+*Jun 29 04:25:14.778: %CVAC-4-CONFIG_DONE: Configuration generated from file flash2:/ios_config.txt was applied and saved to NVRAM. See 'show running-config' or 'show startup-config' for more details.
+*Jun 29 04:25:17.203: %SYS-5-RESTART: System restarted --
+Cisco IOS Software, IOSv Software (VIOS-ADVENTERPRISEK9-M), Version 15.6(2)T, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2016 by Cisco Systems, Inc.
+Compiled Tue 22-Mar-16 16:19 by prod_rel_team
+*Jun 29 04:25:17.347: %CRYPTO-6-ISAKMP_ON_OFF: ISAKMP is OFF
+*Jun 29 04:25:17.347: %CRYPTO-6-GDOI_ON_OFF: GDOI is OFF
+*Jun 29 04:25:32.553: %PLATFORM-5-SIGNATURE_VERIFIED: Image 'flash0:/vios-adventerprisek9-m' passed code signing verification
+*Jun 29 04:25:39.311: %SYS-3-CPUHOG: Task is running for (2000)msecs, more than (2000)msecs (0/0),process = Crypto CA.
+*Jun 29 05:07:28.484: %SSH-5-ENABLED: SSH 1.99 has been enabled
+*Jun 29 05:07:48.493: %LINK-3-UPDOWN: Interface GigabitEthernet0/3, changed state to up
+*Jun 29 05:07:49.492: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/3, changed state to up
+*Jun 29 05:07:54.959: %SYS-5-CONFIG_I: Configured from console by console
+*Jun 29 05:07:56.752: %GRUB-5-CONFIG_WRITING: GRUB configuration is being updated on disk. Please wait...
+*Jun 29 05:07:57.509: %GRUB-5-CONFIG_WRITTEN: GRUB configuration was written to disk successfully.
+R3#
+
+
+======================================================================
