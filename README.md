@@ -19,7 +19,7 @@ Mi objetivo con este portafolio es **compartir conocimiento de calidad en españ
 
 Mi canal donde explico paso a paso los laboratorios y scripts de este portafolio.
 
-- [Automatiza Routers Huawei con Python + Netmiko]
+- [https://www.youtube.com/@Akam-Labs]
 
 ---
 
