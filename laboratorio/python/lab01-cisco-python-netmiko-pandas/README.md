@@ -8,8 +8,9 @@ Este es el material complementario del primer video de mi canal de YouTube.
 
 ## 📹 Video en YouTube
 
-**Ver el tutorial completo:**  
+**Ver el tutorial completo:**
 
+[Automatización de Redes con Python: Netmiko + Pandas | Tutorial Práctico](https://youtu.be/UU4_PoZfj50?si=EwpMXtlBjVbrPi8n)
 
 ---
 
