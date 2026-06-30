@@ -15,6 +15,14 @@ Mi objetivo con este portafolio es **compartir conocimiento de calidad en españ
 
 ---
 
+## 📺 Canal de YouTube
+
+Mi canal donde explico paso a paso los laboratorios y scripts de este portafolio.
+
+- [Automatiza Routers Huawei con Python + Netmiko]
+
+---
+
 ## 🛠️ Tecnologías y Herramientas
 
 | Categoría          | Tecnologías |
@@ -42,11 +50,10 @@ Todo el contenido está pensado para ser **práctico y aplicable**.
 
 ## 🎯 Roadmap de Contenido (2026)
 
-- [ ] Laboratorios de automatización con Python + Netmiko
+- [ ] Laboratorios de automatización con Python
 - [ ] Serie de MPLS y servicios L2/L3 VPN
-- [ ] Configuraciones avanzadas en Huawei
+- [ ] Configuraciones avanzadas en equipos Cisco y Huawei
 - [ ] Buenas prácticas de seguridad en redes
-- [ ] Proyectos de automatización con Ansible / Netmiko
 
 ---
 
@@ -60,12 +67,6 @@ Este proyecto nace con la idea de crear una comunidad de networking en español,
 - 🐛 Abre un **Issue** si tienes dudas, sugerencias o quieres que explique algún tema
 - 🔀 Envía un **Pull Request** si quieres aportar un laboratorio o mejora
 - 💬 Conéctate conmigo en [LinkedIn](https://www.linkedin.com/in/alexkamgoñe)
-
----
-
-## 📺 Próximamente en YouTube
-
-Estoy preparando un canal donde subiré **guías y laboratorios en video**. Este repositorio servirá como complemento: aquí encontrarás todos los archivos, configuraciones y scripts que use en los videos.
 
 ---
 
