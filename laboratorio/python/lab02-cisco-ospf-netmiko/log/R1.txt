@@ -1,0 +1,26 @@
+configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#
+R1(config)#        interface loopback 1
+R1(config-if)#        ip address 1.1.1.1 255.255.255.255
+R1(config-if)#        #
+R1(config-if)#        # CONFIGURACION OSPF
+R1(config-if)#        #
+R1(config-if)#        router ospf 1
+R1(config-router)#        router-id 1.1.1.1
+R1(config-router)#        network 1.1.1.1 0.0.0.0 area 0
+R1(config-router)#        #
+R1(config-router)#        # INTERFACES DE INTERCONEXION
+R1(config-router)#        #
+R1(config-router)#        interface Gi0/0
+R1(config-if)#        ip address 10.0.12.1 255.255.255.0
+R1(config-if)#        ip ospf 1 area 0
+R1(config-if)#        no shutdown
+R1(config-if)#        #
+R1(config-if)#
+R1(config-if)#end
+R1#
+write mem
+Building configuration...
+[OK]
+R1#
