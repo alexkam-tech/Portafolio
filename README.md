@@ -1,3 +1,63 @@
+🌐 Networking Portfolio | Alex Kam
+
+Sharing practical networking knowledge in English & Spanish
+Datacom • Automation • Security • Real-world Labs
+👋 Who am I?
+
+Hi, I'm Alex Chui Kam Goñe, a network architecture specialist with experience in the telecommunications sector in Peru.
+
+I'm currently specializing in network automation (CCNA Automation and Programmability - 200-901) because I believe the future of networking lies at the intersection of solid technical knowledge and intelligent automation.
+
+My goal with this portfolio is to share quality knowledge in both English and Spanish, with real labs, functional configurations, and step-by-step guides you can apply in your work or studies.
+
+📺 YouTube Channel
+
+My channel where I explain step by step the labs and scripts from this portfolio.
+
+[https://www.youtube.com/@Akam-Labs]
+🛠️ Technologies & Tools
+
+Category	Technologies
+Equipment	Huawei, Cisco, Fortinet
+Simulation	GNS3
+Automation	Python, Netmiko, Ansible
+Protocols	MPLS (L2/L3 VPN), BGP, OSPF, ISIS
+Other	Git, Agile methodologies, technical documentation
+📚 What will you find here?
+
+This repository is under active construction. Gradually, I'll be uploading:
+
+Complete labs (topology + configurations + explanation)
+Real automation scripts with detailed comments
+Step-by-step guides for advanced configurations
+Best practices in datacom and security
+All content is designed to be practical and applicable.
+
+🎯 Content Roadmap (2026)
+
+Automation labs with Python
+MPLS series and L2/L3 VPN services
+Advanced configurations on Cisco and Huawei devices
+Network security best practices
+🤝 Let's build a community
+
+This project was born with the idea of creating a networking community in Spanish, especially for Peru, but now expanding to English speakers as well.
+
+How can you participate?
+
+⭐ Give the repository a Star if you like the content
+🐛 Open an Issue if you have questions, suggestions, or want me to cover a specific topic
+🔀 Submit a Pull Request if you want to contribute a lab or improvement
+💬 Connect with me on LinkedIn
+📌 Important Notes
+
+All content is educational and sanitized.
+No credentials, production IPs, or sensitive information will be published.
+Made with ❤️ in Lima, Peru.
+Updated: July 2026
+
+---
+
 # 🌐 Portafolio de Networking | Alex Kam
 
 > **Compartiendo conocimiento práctico de redes en español**  
@@ -79,3 +139,4 @@ Este proyecto nace con la idea de crear una comunidad de networking en español,
 ---
 
 *Actualizado: Junio 2026*
+
